@@ -1,6 +1,6 @@
-import displayDate from "./modules/dateTime.js";
+import { displayDate } from "./modules/dateTime.js";
 import {
-  addBook, contact, listpage, showPopWin,
+  addBook, contact, listpage,
 } from "./modules/navBar.js";
 
 const onLoading = () => {
@@ -24,7 +24,6 @@ links.forEach((link) => {
     }
     if (this.id === "addNewBook") {
       addBook();
-      showPopWin();
     }
     if (this.id === "contactBtn") {
       contact();

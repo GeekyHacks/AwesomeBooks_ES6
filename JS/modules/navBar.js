@@ -1,5 +1,5 @@
 import { container, displayBooks } from "./displayBooks.js";
-import Book from "./books.js";
+import { Book } from "./books.js";
 
 export const main = document.querySelector("main");
 

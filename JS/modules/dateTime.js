@@ -1,11 +1,12 @@
-const dateLine = document.querySelector('.dayDate');
-const navBar = document.querySelector('nav');
-import { DateTime } from './luxon.js';
+import { DateTime } from "./luxon.js";
 
-export let displayDate = () => {
+const dateLine = document.querySelector(".dayDate");
+const navBar = document.querySelector("nav");
+/* eslint-disable-next-line */
+export const displayDate = () => {
   const dt = DateTime.now();
-  let f = { month: 'long', day: 'numeric' };
-  dt.setLocale('en-US').toLocaleString(f);
+  const f = { month: "long", day: "numeric" };
+  dt.setLocale("en-US").toLocaleString(f);
   dateLine.innerHTML = `${dt}`;
   navBar.appendChild(dateLine);
 };
@@ -27,4 +28,3 @@ export let displayDate = () => {
 //   dateLine.innerHTML = `${date} ${time}`;
 //   navBar.appendChild(dateLine);
 // };
-

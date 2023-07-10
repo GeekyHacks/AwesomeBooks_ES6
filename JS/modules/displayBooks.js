@@ -1,20 +1,20 @@
-import { Book, bookCollection } from './books.js';
-export const container = document.querySelector('#container');
+import { Book, bookCollection } from "./books.js";
+
+export const container = document.querySelector("#container");
 
 export const displayBooks = (container) => {
-  container.innerHTML = '';
+  container.innerHTML = "";
   bookCollection.forEach((book) => {
-    const newBook = document.createElement('div');
-    newBook.classList.add('newBook');
+    const newBook = document.createElement("div");
+    newBook.classList.add("newBook");
     newBook.innerHTML = `<div class="bookPart"><p>${book.title} <span>by</span> ${book.author} </p>
       </div><button class="remove">Remove</button>`;
     container.appendChild(newBook);
 
-    const removeBtn = newBook.querySelector('.remove');
-    removeBtn.addEventListener('click', () => {
+    const removeBtn = newBook.querySelector(".remove");
+    removeBtn.addEventListener("click", () => {
       Book.removeBook(book);
       newBook.remove();
     });
   });
 };
-

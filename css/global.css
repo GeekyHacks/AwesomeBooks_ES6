@@ -7,6 +7,11 @@
   appearance: none;
 }
 
+body {
+  font-size: 14px;
+  background: #a5a5a5;
+}
+
 a {
   color: #595959;
 }

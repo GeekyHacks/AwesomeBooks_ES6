@@ -5,14 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Linter Tests</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Awesome Books</title>
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <div class="navBar">
+          <h2>Awesome Books</h2>
+          <div>
+            <a href="#" class="link" id="listBtn">List</a> <span>|</span>
+            <a class="link" id="addNewBook" href="#">Add New</a><span>|</span
+            ><a class="link" id="contactBtn" href="#">Contact</a>
+          </div>
+        </div>
+        <p class="dayDate"></p>
+      </nav>
     </header>
-    <main></main>
-    <footer></footer>
-    <script src="JS/index.js"></script>
+    <main>
+      <h1>Welcome to Awesome Books</h1>
+
+      <div id="container"></div>
+    </main>
+
+    <footer>
+      <h3 class="copyRights">Copy rights reserved to <a href="https://github.com/GeekyHacks">geekyhacks</a></h3>
+    </footer>
+    <script src="JS/index.js" type="module"></script>
+    <script src="JS/modules/books.js" type="module"></script>
+    <script src="JS/modules/dateTime.js" type="module"></script>
+    <script src="JS/modules/displayBooks.js" type="module"></script>
+    <script src="JS/modules/luxon.js" type="module"></script>
+    <script src="JS/modules/navBar.js" type="module"></script>
   </body>
 </html>

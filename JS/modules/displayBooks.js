@@ -1,6 +1,7 @@
-import { Book, bookCollection } from "./books.js";
+import { Book } from "./books.js";
 
 export const container = document.querySelector("#container");
+const bookCollection = JSON.parse(localStorage.getItem("bookCollection")) || [];
 
 export const displayBooks = (container) => {
   container.innerHTML = "";

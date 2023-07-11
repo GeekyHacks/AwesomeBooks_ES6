@@ -1,8 +1,5 @@
 @import 'global'
 
-body
-    background: #a5a5a5
-
 main
     @include columnFlex
     justify-content: center
@@ -17,7 +14,7 @@ nav
 h1
     @include smlInterH1
     text-align: center
-    padding: 5rem
+    padding: 1rem
     @include transparentText
 
 h2
@@ -39,7 +36,6 @@ h3
 
 .navBar
     @include rowFlex
-    gap: 2rem
     justify-content: space-between
     align-items: center
     margin: .3rem
@@ -49,14 +45,13 @@ h3
     h1
         @include smlInterH1
         align-self: flex-start
-        margin-left: 2.5rem
+        margin-left: 1.5rem
 
     div
         @include rowFlex
         align-items: center
-        margin-right: 1.5rem
-        gap: 1rem
-
+        margin-right: 1rem
+        gap: .5rem
         a
             @include smlInterH2
 
@@ -70,7 +65,7 @@ h3
     @include columnFlex
     align-self: center
     margin-bottom: 4rem
-    margin-top: .1rem
+    margin-top: .5rem
     justify-content: stretch
     align-items: center
     color: $primaryColor
@@ -152,7 +147,7 @@ input
     display: none !important
 
 footer
-    position: fixed
+    position: relative
     top: auto
-    bottom: 0
+    bottom: .5rem
     width: 100%

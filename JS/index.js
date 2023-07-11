@@ -10,12 +10,6 @@ const onLoading = () => {
 };
 onLoading();
 
-// Single page app
-
-// contact page
-
-// the following can be done for links click
-
 const links = document.querySelectorAll(".link"); /// create array of element objects
 links.forEach((link) => {
   link.addEventListener("click", function handleClick() {

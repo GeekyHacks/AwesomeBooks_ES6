@@ -1,4 +1,4 @@
-const bookCollection = JSON.parse(localStorage.getItem("bookCollection")) || [];
+let bookCollection = JSON.parse(localStorage.getItem("bookCollection")) || [];
 
 class Book {
   constructor(title, author) {
@@ -13,8 +13,9 @@ class Book {
   }
 
   static removeBook(book) {
-    const bookCollection = bookCollection.filter((b) => b !== book);
+    bookCollection = bookCollection.filter((b) => b !== book);
     localStorage.setItem("bookCollection", JSON.stringify(bookCollection));
   }
 }
-export { Book, bookCollection };
+
+export { Book };/* eslint-disable-line */

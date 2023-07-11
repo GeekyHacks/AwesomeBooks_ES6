@@ -1,9 +1,8 @@
-import { DateTime } from "./luxon.js";
+import { DateTime } from "../../../../../AwesomeBooks_ES6/node_modulesluxon/buildes6luxon.js";
 
 const dateLine = document.querySelector(".dayDate");
 const navBar = document.querySelector("nav");
-/* eslint-disable-next-line */
-export const displayDate = () => {
+export default displayDate = () => {
   const dt = DateTime.now();
   const f = { month: "long", day: "numeric" };
   dt.setLocale("en-US").toLocaleString(f);

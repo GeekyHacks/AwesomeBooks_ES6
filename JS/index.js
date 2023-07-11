@@ -1,4 +1,4 @@
-import { displayDate } from "./modules/dateTime.js";
+import displayDate from "./modules/dateTime.js";
 import {
   addBook, contact, listpage,
 } from "./modules/navBar.js";

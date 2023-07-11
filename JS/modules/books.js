@@ -1,5 +1,4 @@
-/* eslint-disable-next-line */
-let bookCollection = JSON.parse(localStorage.getItem("bookCollection")) || [];
+const bookCollection = JSON.parse(localStorage.getItem("bookCollection")) || [];
 
 class Book {
   constructor(title, author) {
@@ -14,7 +13,7 @@ class Book {
   }
 
   static removeBook(book) {
-    bookCollection = bookCollection.filter((b) => b !== book);
+    const bookCollection = bookCollection.filter((b) => b !== book);
     localStorage.setItem("bookCollection", JSON.stringify(bookCollection));
   }
 }

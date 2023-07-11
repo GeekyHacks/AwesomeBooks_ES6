@@ -57,7 +57,7 @@ is the library website that allows users to add and remove books from the list. 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://geekyhacks.github.io/AwesomeBook/)
+- [Live Demo Link](https://geekyhacks.github.io/AwesomeBooks_ES6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +128,7 @@ Must-Install-Project-with-the-Following-Programmes:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/GeekyHacks/AwesomeBook/issues).
+Feel free to check the [issues page](https://github.com/GeekyHacks/AwesomeBooks_ES6/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
